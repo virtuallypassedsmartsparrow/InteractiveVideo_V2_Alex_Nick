@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap");
+:root {
+  --header-height: 60px;
+}
+
+body {
+  font-size: 15px;
+  background-color: black;
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.overflow-container {
+  overflow-x: hidden;
+}
+
+.page-horizontal-container {
+  min-width: 360px;
+}
+
+a.decoration-none {
+  transition: 0.2s color;
+}
+
+a.decoration-none:hover {
+  text-decoration: none;
+}
+
+.font-11 {
+  font-size: 11px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.page-vertical-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  width: 100%;
+  height: var(--header-height);
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+}
+
+header a {
+  color: #e3aa00;
+  font-weight: 600;
+}
+
+header a:hover {
+  color: #ffbf00;
+}
+
+.page-vertical-container main {
+  flex: 1 1 auto;
+  padding-top: var(--header-height);
+  background-color: whitesmoke;
+}
+
+.page-vertical-container footer {
+  flex: 0 0 auto;
+  color: #c8c8c8;
+  font-size: 14px;
+}
+
+.page-vertical-container footer .footer-column-heading {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-vertical-container footer a {
+  color: inherit;
+}
+
+.page-vertical-container footer a:hover {
+  color: white;
+}
+
+.page-vertical-container footer a:hover.link-fb {
+  color: #4267b2;
+}
+
+.page-vertical-container footer a:hover.link-tw {
+  color: #1da1f2;
+}
+
+.page-vertical-container footer a:hover.link-yt {
+  color: red;
+}
+
+.page-vertical-container footer a:hover.link-ig {
+  color: #e1306c;
+}

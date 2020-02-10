@@ -1,0 +1,15 @@
+MATTHEW
+public > uploadsmanager > thumbnails
+  Thumbnail images go in this folder
+
+public > uploadsmanager > thumbnails > thumbnailsmanager.js 
+  Information that appears on the home screen + thumbnail links go here.
+  You shouldn't have any problems if you copy the existing format of the json objects.
+
+
+
+NICK
+Files you want to work with are:
+  views > video.handlebars
+  public > css > video.scss OR video.css (up to you)
+  public > js > video.js

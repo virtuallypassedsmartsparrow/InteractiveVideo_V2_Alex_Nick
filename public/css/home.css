@@ -1,0 +1,33 @@
+.thumbnail .thumbnail-img-new {
+  background: var(--background-thumbnail);
+  background-size: cover;
+  background-position: center;
+}
+
+.thumbnail .thumbnail-img {
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.thumbnail .thumbnail-title-container {
+  height: 4.5em;
+}
+
+.thumbnail .thumbnail-title-container .thumbnail-title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.thumbnail .thumbnail-description-container {
+  height: 4.5em;
+}
+
+.thumbnail .thumbnail-description-container .thumbnail-description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

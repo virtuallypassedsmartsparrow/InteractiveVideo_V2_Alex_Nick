@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap');
+
+:root {
+    --header-height: 60px;
+}
+
+body {
+    font-size: 15px;
+    background-color: black;
+    font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+// 
+// The following two classes are used to control minimum screen size
+//
+.overflow-container { overflow-x: hidden; }
+.page-horizontal-container { min-width: 360px; }
+
+// 
+// Utility classes that may be useful on other pages
+// 
+a.decoration-none {
+    transition: 0.2s color;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.font-11 { font-size: 11px; }
+.font-12 { font-size: 12px; }
+.font-20 { font-size: 20px; }
+.font-24 { font-size: 24px; }
+
+
+// 
+// The following are classes for styling the base layout of the website (header, main, footer)
+// 
+.page-vertical-container { min-height: 100vh; display: flex; flex-direction: column; }
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    width: 100%;
+    height: var(--header-height);
+    // background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+
+    a {
+        color: rgb(227, 170, 0);
+        font-weight: 600;
+        &:hover {
+            color: rgb(255, 191, 0);
+        }
+    }
+}
+.page-vertical-container { 
+    main {
+        flex: 1 1 auto;
+        padding-top: var(--header-height);
+        background-color: rgb(245, 245, 245);
+    }
+
+    footer {
+        flex: 0 0 auto;
+        color: rgb(200, 200, 200);
+        font-size: 14px;
+        .footer-column-heading {
+            color: rgba(255, 255, 255, 0.5);            
+        }
+        a {
+            color: inherit;
+
+            &:hover {
+                color: white;
+                &.link-fb { color: rgb(66,103,178); }
+                &.link-tw { color: rgb(29,161,242); }
+                &.link-yt { color: rgb(255,0,0); }
+                &.link-ig { color: rgb(225,48,108); }
+            }
+        }
+    }
+}
