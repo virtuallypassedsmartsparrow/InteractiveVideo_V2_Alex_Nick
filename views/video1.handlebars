@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="/css/video.css" />
+
+<link rel="stylesheet" href="/js/video1/video1style.css" />
+
+
+
+<section class="container py-5">
+    <h3><b>Video 1</b></h3>
+
+
+
+    <div class="canvasContainer" style="max-width: 800px;">
+        <div class=" mb-1 justify-content-center">
+
+            {{!-- USING EMBED (MAKES THE SIMULATION CANVAS TOO SMALL) --}}
+            {{!-- <div class="embed-responsive embed-responsive-16by9" id="responsiveCanvas">
+                <div id="canvasContainer">
+                    <canvas id="videoCanvas" class="embed-responsive-item"
+                        style="background-color: rgb(255, 191, 0);"></canvas>
+                    <canvas id="testCanvas" class="border border-danger embed-responsive-item"></canvas>
+                    <canvas id="simulationCanvas" class="border border-danger embed-responsive-item"></canvas>
+                </div>
+                <div id="videoCanvasNavController" class="videoCanvasNavController d-none" style="z-index: 25;">
+                    <button class="btn btn-danger font-14 mr-3" id="navSeeDerivationBtn"><b>SEE DERIVATION</b></button>
+                    <button class="btn btn-danger font-14" id="navSkipDerivationBtn"><b>SKIP</b></button>
+                </div>
+                <div id="videoCanvasMediaController" class="videoCanvasMediaController" style="z-index: 25;">
+                    <img class="videoControlIcon" id="playBtn" src="/IN_PROGRESS/images/play_icon.png" />
+                    <img class="videoControlIcon" id="pauseBtn" src="/IN_PROGRESS/images/pause_icon.png" />
+                    <span class="ml-3 mr-3">[<span id="videoCurrentScene"></span>]</span>
+                    <span class="ml-3 mr-auto" id="videoTime">0 s</span>
+
+                    <img class="videoControlIcon" id="unmuteBtn" src="/IN_PROGRESS/images/unmute_icon.png" />
+                    <img class="videoControlIcon" id="muteBtn" src="/IN_PROGRESS/images/mute_icon.png" />
+                    <img class="videoControlIcon" id="fullscreenBtn" src="/IN_PROGRESS/images/fullscreen.png" />
+                    <img class="videoControlIcon" id="exitFullscreenBtn"
+                        src="/IN_PROGRESS/images/fullscreen_exit.png" />
+                </div>
+            </div> --}}
+            {{!-- NOT USING EMBED --}}
+            <div id="responsiveCanvas" class="position-relative">
+                <div style="width: 100%; padding-top: 56.25%"></div>
+                <div style="position: absolute; top: 0px; left: 0px; height: 100%; width: 100%;">
+                    <canvas id="videoCanvas"
+                        style="background-color: rgb(255, 191, 0); position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; z-index: 19;"></canvas>
+                    <canvas id="testCanvas" class="border border-danger d-none"
+                        style="position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; z-index: 19;"></canvas>
+                    <canvas id="simulationCanvas" width="444" height="250"
+                        style="position: absolute; top: 0px; left: 0px; z-index: 20; background-color: rgba(255, 255, 255, 0.2);"></canvas>
+                </div>
+
+
+                <div id="videoCanvasNavController" class="videoCanvasNavController d-none" style="z-index: 25;">
+                    <button class="btn btn-danger font-14 mr-3" id="navSeeDerivationBtn"><b>SEE DERIVATION</b></button>
+                    <button class="btn btn-danger font-14" id="navSkipDerivationBtn"><b>SKIP</b></button>
+                </div>
+                <div id="videoCanvasMediaController" class="videoCanvasMediaController" style="z-index: 25;">
+                    <img class="videoControlIcon" id="playBtn" src="/img/images/play_icon.png" />
+                    <img class="videoControlIcon" id="pauseBtn" src="/img/images/pause_icon.png" />
+                    <span class="ml-3 mr-3">[<span id="videoCurrentScene"></span>]</span>
+                    <span class="ml-3 mr-auto" id="videoTime">0 s</span>
+
+                    <img class="videoControlIcon" id="unmuteBtn" src="/img/images/unmute_icon.png" />
+                    <img class="videoControlIcon" id="muteBtn" src="/img/images/mute_icon.png" />
+                    <img class="videoControlIcon" id="fullscreenBtn" src="/img/images/fullscreen.png" />
+                    <img class="videoControlIcon" id="exitFullscreenBtn" src="/img/images/fullscreen_exit.png" />
+                </div>
+            </div>
+        </div>
+        <div class="mb-1 d-none">
+            <div class="embed-responsive embed-responsive-16by9">
+                <video id="videoElement" class="embed-responsive-item" src="/js/video1/2DOFSpringMassSystemProof.mp4"
+                    controls></video>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/video1/video_canvas.js"></script>
+    <script src="/js/video1/math_functions.js"></script>
+    <script src="/js/video1/physics_simulation.js"></script>
+    <script src="/js/video1/simulation_canvas.js"></script>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+{{!-- <script src="/uploadsmanager/videos/videosmanager.js"></script>   --}}
+<script src="/js/video.js"></script>

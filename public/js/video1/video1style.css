@@ -1,0 +1,130 @@
+.videoCanvasNavController {
+  position: absolute;
+  bottom: calc(40px + 2rem);
+  right: 2rem;
+  color: white;
+}
+
+.videoCanvasMediaController {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  padding: 0px 4px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(100, 100, 100, 1);
+  color: white;
+}
+.videoCanvasMediaController .videoControlIcon {
+  cursor: pointer;
+  margin: 4px;
+  width: 30px;
+}
+
+@keyframes shuffle {
+  0% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-2px, 0px) rotate(0deg);
+  }
+  20% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+  30% {
+    transform: translate(-2px, 0px) rotate(0deg);
+  }
+  40% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+  50% {
+    transform: translate(-2px, 0px) rotate(0deg);
+  }
+  60% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+  70% {
+    transform: translate(-2px, 0px) rotate(0deg);
+  }
+  80% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+  90% {
+    transform: translate(-2px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes reverseshuffle {
+  0% {
+    transform: translate(-2px, 0px) rotate(0deg);
+  }
+  10% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+  20% {
+    transform: translate(-2px, 0px) rotate(0deg);
+  }
+  30% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+  40% {
+    transform: translate(-2px, 0px) rotate(0deg);
+  }
+  50% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+  60% {
+    transform: translate(-2px, 0px) rotate(0deg);
+  }
+  70% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+  80% {
+    transform: translate(-2px, 0px) rotate(0deg);
+  }
+  90% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-2px, 0px) rotate(0deg);
+  }
+}
+
+.mute {
+  cursor: pointer;
+  display: initial;
+}
+
+.button.play {
+  display: block;
+  box-sizing: border-box;
+  width: 0;
+  height: 40px;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-color: transparent transparent transparent #202020;
+  border-style: solid;
+  border-width: 20px 0 20px 30px;
+}
+
+#custom-seekbar {
+  cursor: pointer;
+  height: 10px;
+  margin-bottom: 10px;
+  outline: thin solid orange;
+  overflow: hidden;
+  position: relative;
+  width: 898px;
+}
+#custom-seekbar span {
+  background-color: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 0px;
+}

@@ -3,7 +3,10 @@ module.exports = function (app) {
         res.render("home");
     });
     
-    app.get("/video", function (req, res) {
-        res.render("video");
+    app.get("/video/1", function (req, res) {
+        res.render("video1");
+    });
+    app.get("/video/*", function (req, res) {
+        res.render("video1");
     });
 }
